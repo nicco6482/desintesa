@@ -1,6 +1,6 @@
 # Desintesa MVP
 
-**Demo en vivo:** [https://nicco6482.github.io/desintesa](https://nicco6482.github.io/desintesa)
+**Demo en vivo:** [https://nicco6482.github.io/desintesa/frontend/](https://nicco6482.github.io/desintesa/frontend/)
 
 MVP Full-Stack para gestion de servicios de control de plagas y desinfeccion.
 
