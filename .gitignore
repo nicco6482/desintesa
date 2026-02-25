@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Variables de entorno (secretos)
+.env
+frontend/.env
+backend/.env
+
+# Build de producción
+frontend/dist/
+frontend/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Datos sensibles (no subir datos reales de clientes)
+# Comenta esta línea si quieres subir datos de ejemplo:
+# backend/src/data/orders.json

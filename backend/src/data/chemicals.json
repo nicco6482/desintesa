@@ -1,0 +1,47 @@
+[
+  {
+    "id": "CHEM-001",
+    "nombre": "Deltametrina 2.5 EC",
+    "ingredienteActivo": "Deltametrina",
+    "registroSanitario": "RSCO-URB-INAC-101A-X001-009-2.5",
+    "dosisPorLitro": 1,
+    "unidadDosis": "ml",
+    "tiempoReingreso": 4
+  },
+  {
+    "id": "CHEM-002",
+    "nombre": "Cipermetrina 25 EC",
+    "ingredienteActivo": "Cipermetrina",
+    "registroSanitario": "RSCO-URB-INAC-115A-X004-021-25",
+    "dosisPorLitro": 0.8,
+    "unidadDosis": "ml",
+    "tiempoReingreso": 6
+  },
+  {
+    "id": "CHEM-003",
+    "nombre": "Bromadiolona Bloque 0.005%",
+    "ingredienteActivo": "Bromadiolona",
+    "registroSanitario": "RSCO-URB-RODE-2188-401-014-0.005",
+    "dosisPorLitro": 3,
+    "unidadDosis": "gr",
+    "tiempoReingreso": 2
+  },
+  {
+    "id": "CHEM-004",
+    "nombre": "Permetrina 25%",
+    "ingredienteActivo": "Permetrina",
+    "registroSanitario": "RSCO-PEC-INAC-0900-064-020-25",
+    "dosisPorLitro": 0.6,
+    "unidadDosis": "ml",
+    "tiempoReingreso": 8
+  },
+  {
+    "id": "CHEM-005",
+    "nombre": "Imidacloprid Gel 2.15%",
+    "ingredienteActivo": "Imidacloprid",
+    "registroSanitario": "RSCO-URB-INAC-1001-301-001-2.15",
+    "dosisPorLitro": 2,
+    "unidadDosis": "gr",
+    "tiempoReingreso": 3
+  }
+]

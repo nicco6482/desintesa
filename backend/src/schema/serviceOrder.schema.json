@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://desintesa.local/schema/service-order.json",
+  "title": "ServiceOrder",
+  "type": "object",
+  "required": [
+    "id",
+    "clientId",
+    "clientName",
+    "location",
+    "assignedTechnician",
+    "pestType",
+    "infestationLevel",
+    "chemicalsUsed",
+    "applicationDate",
+    "nextVisitDate",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "clientName": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "required": ["address", "gps"],
+      "properties": {
+        "address": {
+          "type": "string"
+        },
+        "gps": {
+          "type": "object",
+          "required": ["lat", "lng"],
+          "properties": {
+            "lat": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "lng": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            }
+          }
+        }
+      }
+    },
+    "assignedTechnician": {
+      "type": "string"
+    },
+    "pestType": {
+      "type": "string"
+    },
+    "infestationLevel": {
+      "type": "string",
+      "enum": ["bajo", "medio", "alto"]
+    },
+    "chemicalsUsed": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "sanitaryRegistry", "cantidadAplicada", "dilucion", "lote"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "activeIngredient": {
+            "type": "string"
+          },
+          "sanitaryRegistry": {
+            "type": "string"
+          },
+          "dosisPorLitro": {
+            "type": "number"
+          },
+          "dosisUnidad": {
+            "type": "string",
+            "enum": ["ml", "gr"]
+          },
+          "cantidadAplicada": {
+            "type": "number"
+          },
+          "dilucion": {
+            "type": "string"
+          },
+          "lote": {
+            "type": "string"
+          },
+          "tiempoReingreso": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "applicationDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "nextVisitDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["programado", "completado", "cancelado"]
+    },
+    "serviceNotes": {
+      "type": "string"
+    },
+    "certificate": {
+      "type": "object",
+      "properties": {
+        "issued": {
+          "type": "boolean"
+        },
+        "issuedAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "folio": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
